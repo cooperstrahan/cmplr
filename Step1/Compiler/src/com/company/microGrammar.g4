@@ -2,36 +2,14 @@ grammar microGrammar;
 
 empty : ;
 
-SET : ':=' ;
+OPERATOR : ( ':=' | '+' | '-' | '*' | '/' | '=' | '!=' 
+         | '<' | '>' | '(' | ')' | ';' | ',' | '<=' | '>=' ) ;
 
-ADD : '+' ;
-
-SUB : '-' ;
-
-MUL : '*' ;
-
-DIV : '/' ;
-
-EQ : '=' ;
-
-NEQ : '!=' ;
-
-LT : '<' ;
-
-GT : '>' ;
-
-LP : '(' ;
-
-RP : ')' ;
-
-SC : ';' ;
-
-CM : ',' ;
-
-LTQ : '<=' ;
-
-GTQ : '>=' ;
-
+KEYWORD :
+	( 'PROGRAM' | 'BEGIN' | 'END' | 'FUNCTION' | 'READ'
+	| 'WRITE' | 'IF' | 'ELSE' | 'ENDIF' | 'WHILE' 
+	| 'ENDWHILE' | 'CONTINUE' | 'BREAK' | 'RETURN'
+	| 'INT' | 'VOID' | 'STRING' | 'FLOAT' ) ;
 
 
 WS : [ \t\n\r]+ -> skip ;
@@ -45,42 +23,4 @@ FLOATLITERAL : [0-9]* '.' [0-9]+ ;
 STRINGLITERAL : '"' .*? '"' ;
 
 COMMENT : '--' .*? '\n' ;
-
-PROGRAM : 'PROGRAM' ;
-
-BEGIN : 'BEGIN' ;
-
-END : 'END' ;
-
-FUNCTION : 'FUNCTION' ;
-
-READ : 'READ' ;
-
-WRITE : 'WRITE' ;
-
-IF : 'IF' ;
-
-ELSE : 'ELSE' ;
-
-ENDIF : 'ENDIF' ;
-
-WHILE : 'WHILE' ;
-
-ENDWHILE : 'ENDWHILE' ;
-
-CONTINUE : 'CONTINUE' ;
-
-BREAK : 'BREAK' ;
-
-RETURN : 'RETURN' ;
-
-INT : 'INT' ;
-
-VOID : 'VOID' ;
-
-STRING : 'STRING' ;
-
-FLOAT : 'FLOAT' ;
-
-
 

@@ -1,90 +1,28 @@
 token literal names:
 null
-':='
-'+'
-'-'
-'*'
-'/'
-'='
-'!='
-'<'
-'>'
-'('
-')'
-';'
-','
-'<='
-'>='
 null
 null
 null
 null
 null
 null
-'PROGRAM'
-'BEGIN'
-'END'
-'FUNCTION'
-'READ'
-'WRITE'
-'IF'
-'ELSE'
-'ENDIF'
-'WHILE'
-'ENDWHILE'
-'CONTINUE'
-'BREAK'
-'RETURN'
-'INT'
-'VOID'
-'STRING'
-'FLOAT'
+null
+null
 
 token symbolic names:
 null
-SET
-ADD
-SUB
-MUL
-DIV
-EQ
-NEQ
-LT
-GT
-LP
-RP
-SC
-CM
-LTQ
-GTQ
+OPERATOR
+KEYWORD
 WS
 IDENTIFIER
 INTLITERAL
 FLOATLITERAL
 STRINGLITERAL
 COMMENT
-PROGRAM
-BEGIN
-END
-FUNCTION
-READ
-WRITE
-IF
-ELSE
-ENDIF
-WHILE
-ENDWHILE
-CONTINUE
-BREAK
-RETURN
-INT
-VOID
-STRING
-FLOAT
 
 rule names:
 empty
 
 
 atn:
-[3, 24715, 42794, 33075, 47597, 16764, 15335, 30598, 22884, 3, 41, 7, 4, 2, 9, 2, 3, 2, 3, 2, 3, 2, 2, 2, 3, 2, 2, 2, 2, 5, 2, 4, 3, 2, 2, 2, 4, 5, 3, 2, 2, 2, 5, 3, 3, 2, 2, 2, 2]
+[3, 24715, 42794, 33075, 47597, 16764, 15335, 30598, 22884, 3, 10, 7, 4, 2, 9, 2, 3, 2, 3, 2, 3, 2, 2, 2, 3, 2, 2, 2, 2, 5, 2, 4, 3, 2, 2, 2, 4, 5, 3, 2, 2, 2, 5, 3, 3, 2, 2, 2, 2]

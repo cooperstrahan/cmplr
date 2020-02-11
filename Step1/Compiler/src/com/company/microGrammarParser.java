@@ -17,11 +17,8 @@ public class microGrammarParser extends Parser {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		SET=1, ADD=2, SUB=3, MUL=4, DIV=5, EQ=6, NEQ=7, LT=8, GT=9, LP=10, RP=11, 
-		SC=12, CM=13, LTQ=14, GTQ=15, WS=16, IDENTIFIER=17, INTLITERAL=18, FLOATLITERAL=19, 
-		STRINGLITERAL=20, COMMENT=21, PROGRAM=22, BEGIN=23, END=24, FUNCTION=25, 
-		READ=26, WRITE=27, IF=28, ELSE=29, ENDIF=30, WHILE=31, ENDWHILE=32, CONTINUE=33, 
-		BREAK=34, RETURN=35, INT=36, VOID=37, STRING=38, FLOAT=39;
+		OPERATOR=1, KEYWORD=2, WS=3, IDENTIFIER=4, INTLITERAL=5, FLOATLITERAL=6, 
+		STRINGLITERAL=7, COMMENT=8;
 	public static final int
 		RULE_empty = 0;
 	public static final String[] ruleNames = {
@@ -29,18 +26,10 @@ public class microGrammarParser extends Parser {
 	};
 
 	private static final String[] _LITERAL_NAMES = {
-		null, "':='", "'+'", "'-'", "'*'", "'/'", "'='", "'!='", "'<'", "'>'", 
-		"'('", "')'", "';'", "','", "'<='", "'>='", null, null, null, null, null, 
-		null, "'PROGRAM'", "'BEGIN'", "'END'", "'FUNCTION'", "'READ'", "'WRITE'", 
-		"'IF'", "'ELSE'", "'ENDIF'", "'WHILE'", "'ENDWHILE'", "'CONTINUE'", "'BREAK'", 
-		"'RETURN'", "'INT'", "'VOID'", "'STRING'", "'FLOAT'"
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
-		null, "SET", "ADD", "SUB", "MUL", "DIV", "EQ", "NEQ", "LT", "GT", "LP", 
-		"RP", "SC", "CM", "LTQ", "GTQ", "WS", "IDENTIFIER", "INTLITERAL", "FLOATLITERAL", 
-		"STRINGLITERAL", "COMMENT", "PROGRAM", "BEGIN", "END", "FUNCTION", "READ", 
-		"WRITE", "IF", "ELSE", "ENDIF", "WHILE", "ENDWHILE", "CONTINUE", "BREAK", 
-		"RETURN", "INT", "VOID", "STRING", "FLOAT"
+		null, "OPERATOR", "KEYWORD", "WS", "IDENTIFIER", "INTLITERAL", "FLOATLITERAL", 
+		"STRINGLITERAL", "COMMENT"
 	};
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
@@ -126,7 +115,7 @@ public class microGrammarParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3)\7\4\2\t\2\3\2\3"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\n\7\4\2\t\2\3\2\3"+
 		"\2\3\2\2\2\3\2\2\2\2\5\2\4\3\2\2\2\4\5\3\2\2\2\5\3\3\2\2\2\2";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
