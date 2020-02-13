@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0fc1f4a2-b984-49f9-883a-95392ceb2dff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/cooperstrahan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compiler.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fibonacci.micro.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loop.micro.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nested.micro.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/inputs/fibonacci.micro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/inputs/loop.micro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/inputs/nested.micro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/inputs/sqrt.micro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/microGrammar.g4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/microGrammar.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/microGrammar.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/microGrammarBaseListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/microGrammarLexer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/microGrammarLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/microGrammarLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/microGrammarListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/microGrammarParser$EmptyContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/microGrammarParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/outputs/fibonacci.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/outputs/loop.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/outputs/nested.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/com/company/outputs/sqrt.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqrt.micro.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/inputs/fibonacci.micro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/inputs/loop.micro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/inputs/nested.micro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/inputs/sqrt.micro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/microGrammar.g4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/microGrammar.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/microGrammar.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/microGrammarBaseListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/microGrammarBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/microGrammarLexer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/microGrammarLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/microGrammarLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/microGrammarLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/microGrammarListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/microGrammarListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/microGrammarParser$EmptyContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/microGrammarParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/microGrammarParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/outputs/fibonacci.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/outputs/loop.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/outputs/nested.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/outputs/sqrt.out" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XdIDCiYhXs464bGxeaHK31nTr6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.company" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/company/inputs" />
+      <recent name="$PROJECT_DIR$/src/com/company" />
+      <recent name="$PROJECT_DIR$/src/com/company/outputs" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="Compiler" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0fc1f4a2-b984-49f9-883a-95392ceb2dff" name="Default Changelist" comment="" />
+      <created>1581369422711</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581369422711</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Closer">
+      <created>1581389403629</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581389403629</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Correct output written to console">
+      <created>1581394730074</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581394730074</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Correct output to files">
+      <created>1581449124729</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581449124729</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Closer" />
+    <MESSAGE value="Correct output written to console" />
+    <MESSAGE value="Correct output to files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct output to files" />
+  </component>
+</project>
