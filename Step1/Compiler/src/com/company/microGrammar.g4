@@ -22,5 +22,5 @@ FLOATLITERAL : [0-9]* '.' [0-9]+ ;
 
 STRINGLITERAL : '"' .*? '"' ;
 
-COMMENT : '--' .*? '\n' ;
+COMMENT : '--' .*? '\n' -> skip ;
 
