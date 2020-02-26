@@ -1,0 +1,66 @@
+
+\documentclass[sigconf]{acmart}
+
+
+
+\begin{document}
+
+\title{Compilers Portfolio}
+
+\author{Ben Barnett}
+\affiliation{%
+  \institution{Montana State University}
+}
+\email{benbarn313@gmail.com}
+
+\author{Cooper Strahan}
+\affiliation{%
+  \institution{Montana State University}
+}
+\email{cooperstrahan@gmail.com}
+
+\begin{teaserfigure}
+  \includegraphics[width=\textwidth]{msu}
+  \caption{Montana State University.}
+  \label{fig:teaser}
+\end{teaserfigure}
+
+\maketitle
+
+\section{Program}
+\section{Teamwork}
+\section{Design Pattern}
+\section{Technical Writing}
+
+\subsection{Introduction}
+
+\subsection{Background}
+
+\subsection{Methods and Discussion}
+
+\subsubsection{Tools and Setup} 
+The first main step in this project is to build a scanners. Scanners are used in the compiler for any given programming language. Say you want to write your own programming language; a scanner would form the basic rules for your computer to be able to interpret your language. Effectively, the function of a scanner is the first step in translating code into machine language. In this step we installed ANTLR to our individual machines. ANTLR is a processing language that allows users to create files consisting of regular expressions that will translate text. This language parsing tool will allow us to build our own 'Toy' programming language, but can be used to create larger scale languages. After installing ANTLR we added its' paths to our environment variables and created aliases for consistent use in the command line. Once this was set up and we tested the basic usage of ANTLR by defining the Hello.g4 grammar described on ANTLR's github setup page. We then created a github repository for our project files. We both installed IntelliJ because of its great Version Control capabilities, we plan on developing our project with Java.
+\newpage
+\subsubsection{Scanner} 
+In this step we gave a set of token definitions to the ANTLR scanner generation tool. We were then able to tokenize various programs in the LITTLE language. The whole point of tokenization is to break down code into smaller parts, or tokens, that are usually comprised of a few characters. The point of this is to organize the code into small parts that are recognized by the parser(the next step in compilation).
+ Programmers then use regular expressions, a sequence of characters that define a search pattern, to match words, symbols, and numbers to their given meanings. These meanings are separated into five different categories; Identifiers, Keywords, Separators, Literals, and Comments. Identifiers are names given by programmers to store data, Keywords are words reserved by the programming language that cause the program to exhibit a specific behavior, Separators are used by programmers to group and split up the other tokens, Operators are used to perform mathematical functionality, Literals are numbers or words many times being stored by identifiers, and Comments are phrases written by the programmer to others, or their future self, that are intended to explain the program.
+\newline
+Guided by this theory of scanners, we developed a Scanner for the LITTLE programming language. The first thing we did for our scanner was write a grammar file. This file is comprised of regular expressions that assign categories to the input text. We then used the ANTLR tool to generate a Lexer, Listener, and Parser. These programs allow us to go far beyond just tokenizing the code, but we have yet to explore all of their functionality. In building our scanner, we first chose to use the Java programming language. This decision was based on many factors, the first being the flawless integration with the ANTLR tool, which significantly aided us implementing our scanner. Furthermore, Java is both my partner and I's strongest programming language, which allowed us to work quickly and effectively and trouble-shoot any problems we ran into. Our next method to insure success was to include the input and ANTLR.jar files within our project so that they would be locally accessible at run time, which allows our project to be portable across multiple development environments. Another deliberate decision we made was to implement many of the objects suggested by our textbook, The Definitive ANTLR 4 Reference, which helped us streamline the process of reading input files without having to dive into the documentation. We also chose to use a string array to more easily read through the input text files, and then used a loop to iterate through the text files in order to generate our desired output files. Ultimately, our methods and design choices allowed us to create a concise and efficient program that accomplishes our desired goal.
+\newline
+The first and most significant challenge we ran into was, being very new to the ANTLR library, implementing the functionality given to us by ANTLR, which meant we had to expend extra efforts to insure our understanding. The first programming challenge we encountered was understanding how to read in the token stream, which allows us access to the tokenized version of our input file. By reading through the documentation we discovered that the token stream's consume method gave us the ability to read through the input file. Our next issue arose when we ran the consume method, because the method auto-increments the index of our token stream, we could either get the first or the last index of the stream but not both. In order to get around this issue we had to write a clause within our loop that allowed us to jump out of the loop right before we caused an error by trying to run the getType method on the End Of Function literal. Overall, reading the documentation was extremely helpful in helping us solve all of the issues that we ran into while we were writing our scanner.
+
+\subsubsection{Parser} 
+\subsubsection{Symbol Table} 
+\subsubsection{Code Generation} 
+\subsubsection{Full-fledged compiler}
+
+\subsection{Conclusion and Future Work}
+
+\section{UML}
+\section{Design Trade-offs}
+\section{Software development life cycle model}
+
+
+\end{document}
+\endinput
+
