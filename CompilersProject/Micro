@@ -1,0 +1,1 @@
+java -jar ./out/artifacts/CompilersProject_jar/CompilersProject.jar $1
