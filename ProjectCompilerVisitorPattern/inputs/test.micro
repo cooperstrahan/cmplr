@@ -1,0 +1,13 @@
+PROGRAM p
+BEGIN
+
+	INT a;
+
+	FUNCTION VOID main()
+	BEGIN
+		a := 10;
+
+        a := (a + 1);
+
+	END
+END
