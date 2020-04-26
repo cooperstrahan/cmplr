@@ -1,36 +1,45 @@
 package com.company;
+import com.sun.jmx.snmp.SnmpOidDatabase;
 
-import sun.jvm.hotspot.debugger.cdbg.Sym;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Node {
-    public Symbol symbol;
-    public Node LeftChild;
-    public Node CenterChild;
-    public Node RightChild;
+    public String type;
+    public String name;
+    public int intValue;
+    public float floatValue;
+    public String stringValue;
+
+
+    public Node leftChild;
+    public Node centerChild;
+    public Node rightChild;
+
+    public Node() {}
 
     public Node(String name, String type){
-        this.symbol = new Symbol(name, type);
-    }
-
-    public Node(Node node){
-        this.symbol = node.symbol;
-        this.LeftChild = node.LeftChild;
-        this.CenterChild = node.CenterChild;
-        this.RightChild = node.RightChild;
-    }
-
-    public Node(String name, String type, String stringValue){
-        this.symbol = new Symbol(name, type, stringValue);
+        this.type = type;
+        this.name = name;
     }
 
     public Node(String name, String type, int intValue){
-        this.symbol = new Symbol(name, type, intValue);
+            this.type = type;
+            this.name = name;
+            this.intValue = intValue;
     }
 
     public Node(String name, String type, float floatValue){
-        this.symbol = new Symbol(name, type, floatValue);
+        this.type = type;
+        this.name = name;
+        this.floatValue = floatValue;
     }
 
+    public Node(String type, String name, String stringValue){
+        this.type = type;
+        this.name = name;
+        this.stringValue = stringValue;
+    }
 
 
 }

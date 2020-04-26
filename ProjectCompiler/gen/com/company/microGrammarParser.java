@@ -1,4 +1,4 @@
-// Generated from /Users/cooperstrahan/Documents/Compilers/ProjectCompilerVisitorPattern/src/com/company/microGrammar.g4 by ANTLR 4.8
+// Generated from /Users/cooperstrahan/Documents/Compilers/ProjectCompiler/src/com/company/microGrammar.g4 by ANTLR 4.8
 package com.company;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
@@ -1685,7 +1685,7 @@ public class microGrammarParser extends Parser {
 			setState(219);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,9,_ctx);
-			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					if ( _parseListeners!=null ) triggerExitRuleEvent();
 					_prevctx = _localctx;
@@ -1823,7 +1823,7 @@ public class microGrammarParser extends Parser {
 			setState(234);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,10,_ctx);
-			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					if ( _parseListeners!=null ) triggerExitRuleEvent();
 					_prevctx = _localctx;

@@ -20,13 +20,16 @@ public class Main {
         microGrammarParser parser = new microGrammarParser(tokens);
         microGrammarBaseListener listener = new microGrammarBaseListener();
 
+
         new ParseTreeWalker().walk(listener, parser.program());
 
         ArrayList<SymbolTable> tables = listener.getSymbolTable();
 
-        AbstractSyntaxTree tree = listener.getAbstractSyntaxTree();
 
-        tree.printTree();
+
+        AST tree = listener.getAbstractSyntaxTree();
+//
+        tree.prettyPrint();
 //        boolean dup = false;
 //
 //        for(SymbolTable table : tables){

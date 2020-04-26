@@ -16,9 +16,10 @@ import java.util.ArrayList;
 public class microGrammarBaseListener implements microGrammarListener {
 
     ArrayList<SymbolTable> symbolTables = new ArrayList<SymbolTable>();
-    AbstractSyntaxTree abstractSyntaxTree = new AbstractSyntaxTree();
+    AST abstractSyntaxTree = new AST();
 	int currentTable = 0;
 	int currentBlock = 0;
+	int assignCount = 0;
 
 	public ArrayList<SymbolTable> getSymbolTable(){
 		return symbolTables;
@@ -29,7 +30,7 @@ public class microGrammarBaseListener implements microGrammarListener {
         currentTable++;
     }
 
-    public AbstractSyntaxTree getAbstractSyntaxTree(){
+    public AST getAbstractSyntaxTree(){
 		return abstractSyntaxTree;
 	}
 	/**
@@ -39,7 +40,7 @@ public class microGrammarBaseListener implements microGrammarListener {
 	 */
 	@Override
     public void enterProgram(microGrammarParser.ProgramContext ctx) {
-	    symbolTables.add(new SymbolTable("GLOBAL"));
+		symbolTables.add(new SymbolTable("GLOBAL"));
     }
 	/**
 	 * {@inheritDoc}
@@ -373,10 +374,23 @@ public class microGrammarBaseListener implements microGrammarListener {
 			abstractSyntaxTree.setRoot(new Node(":=", "StoreOp"));
 		}
 
-		Symbol temp =  symbolTables.get(currentTable).variables.get(ctx.id().getText());
-//		System.out.println(ctx.id().getText() + " temp " + temp.name);
-		abstractSyntaxTree.setLeftChild(new Node(temp.name, temp.type));
-		abstractSyntaxTree.setRightChild(new Node(":=", "StoreOp"));
+		Symbol temp;
+		if(symbolTables.get(currentTable).variables.get(ctx.id().getText()) != null)
+			temp = symbolTables.get(currentTable).variables.get(ctx.id().getText());
+		else
+			temp = symbolTables.get(currentTable).globalVariables.get(ctx.id().getText());
+		System.out.println(ctx.id().getText() + " temp " + temp.name);
+		abstractSyntaxTree.prettyPrint();
+
+		if(assignCount == 0){
+			abstractSyntaxTree.addLeftChild(new Node(temp.name, temp.type), assignCount);
+			++assignCount;
+		} else {
+			abstractSyntaxTree.addRightChild(new Node(":=", "StoreOp"));
+			abstractSyntaxTree.addLeftChild(new Node(temp.name, temp.type), assignCount);
+			++assignCount;
+		}
+
 	}
 	/**
 	 * {@inheritDoc}
@@ -454,7 +468,7 @@ public class microGrammarBaseListener implements microGrammarListener {
 		} catch (NullPointerException np) { }
 
 		if(s != null){
-			abstractSyntaxTree.setRightChild(new Node(s, "AddOp"));
+			abstractSyntaxTree.addRightChild(new Node(s, "AddOp"));
 		}
 	}
 	/**
@@ -491,7 +505,7 @@ public class microGrammarBaseListener implements microGrammarListener {
 		} catch (NullPointerException np) { }
 
 		if(s != null){
-			abstractSyntaxTree.setRightChild(new Node(s, "MulOp"));
+			abstractSyntaxTree.addRightChild(new Node(s, "MulOp"));
 		}
 	}
 	/**
@@ -571,17 +585,17 @@ public class microGrammarBaseListener implements microGrammarListener {
 		String str;
 		try {
 			s = symbolTables.get(currentTable).variables.get(ctx.id().getText());
-			abstractSyntaxTree.setCenterChild(new Node(s.name, s.type));
+			abstractSyntaxTree.addCenterChild(new Node(s.name, s.type));
 		} catch (NullPointerException npId) { }
 
 		try {
 			str = ctx.INTLITERAL().getText();
-			abstractSyntaxTree.setCenterChild(new Node("Literal", "INT", Integer.parseInt(str)));
+			abstractSyntaxTree.addCenterChild(new Node("Literal", "INT", Integer.parseInt(str)));
 		} catch (NullPointerException npId) { }
 
 		try {
 			str = ctx.FLOATLITERAL().getText();
-			abstractSyntaxTree.setCenterChild( new Node("Literal", "FLOAT", Float.parseFloat(str)));
+			abstractSyntaxTree.addCenterChild( new Node("Literal", "FLOAT", Float.parseFloat(str)));
 		} catch (NullPointerException npId) { }
 		if (s != null){
 
@@ -645,7 +659,6 @@ public class microGrammarBaseListener implements microGrammarListener {
             currentBlock++;
             createBlock();
         }
-
     }
 	/**
 	 * {@inheritDoc}

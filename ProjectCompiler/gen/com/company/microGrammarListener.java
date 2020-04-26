@@ -1,4 +1,4 @@
-// Generated from /Users/cooperstrahan/Documents/Compilers/ProjectCompilerVisitorPattern/src/com/company/microGrammar.g4 by ANTLR 4.8
+// Generated from /Users/cooperstrahan/Documents/Compilers/ProjectCompiler/src/com/company/microGrammar.g4 by ANTLR 4.8
 package com.company;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 

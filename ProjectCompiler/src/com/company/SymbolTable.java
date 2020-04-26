@@ -6,6 +6,7 @@ import java.util.Map;
 public class SymbolTable {
     String scope;
     Map<String, Symbol> variables = new LinkedHashMap<String, Symbol>();
+    Map<String, Symbol> globalVariables = new LinkedHashMap<String, Symbol>();
     int blockNumber = 0;
     boolean duplicateDeclaration = false;
 
@@ -24,7 +25,7 @@ public class SymbolTable {
 
     public SymbolTable(String scope, Map<String, Symbol> variables){
         this.scope = scope;
-        this.variables = variables;
+        this.globalVariables = variables;
     }
 
     public void addString(String name, String value){
