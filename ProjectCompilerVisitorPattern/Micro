@@ -1,1 +1,0 @@
-java -jar ./out/artifacts/ProjectCompiler_jar/ProjectCompiler.jar $1
